@@ -1,0 +1,10 @@
+{
+  "extends": "@zgo/tsconfig/tsconfig-node.json",
+  "compilerOptions": {
+    "declaration": true,
+  },
+  "files": ["index.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}

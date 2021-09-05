@@ -1,0 +1,34 @@
+{
+  "name": "fastify-knex-ts",
+  "version": "1.0.0",
+  "description": "knex's fastify plugin,knexjs,knex,fastify plugin",
+  "main": "index.js",
+  "files": ["index.js", "index.d.ts"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgoby/fastify-knex.git"
+  },
+  "keywords": [
+    "knex's",
+    "fastify",
+    "plugin",
+    "knexjs",
+    "knex",
+    "fastify",
+    "plugin"
+  ],
+  "author": "zgo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zgoby/fastify-knex/issues"
+  },
+  "homepage": "https://github.com/zgoby/fastify-knex#readme",
+  "dependencies": {
+    "fastify": "^3.20.2",
+    "fastify-plugin": "^3.0.0",
+    "knex": "^0.95.11"
+  },
+  "devDependencies": {
+    "@zgo/tsconfig": "^1.0.1"
+  }
+}
