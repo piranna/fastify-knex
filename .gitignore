@@ -1,2 +1,5 @@
 /node_modules
 **.log
+*.tgz
+index.d.ts
+index.js

@@ -27,11 +27,16 @@
   },
   "homepage": "https://github.com/zgoby/fastify-knex#readme",
   "devDependencies": {
-    "@zgo/tsconfig": "^1.0.3"
+    "@zgo/tsconfig": "^1.0.3",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "fastify": "^3.27.0",
     "fastify-plugin": "^3.0.0",
     "knex": "^1.0.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
   }
 }
