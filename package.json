@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/zgoby/fastify-knex#readme",
   "devDependencies": {
-    "@zgo/tsconfig": "^1.0.1"
+    "@zgo/tsconfig": "^1.0.3"
   },
   "peerDependencies": {
     "fastify": "^3.27.0",
