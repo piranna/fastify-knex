@@ -27,7 +27,11 @@ export function fastifyKnex(fastify: FastifyInstance, options: Knex.Config | str
     client.destroy(() => done());
   });
 
-  client.raw('SELECT VERSION()').then(onReady).catch(onError);
+  const versionFunc = (
+    (options as Knex.Config).client as string
+  ).includes('sqlite') ? 'sqlite_version' : 'VERSION';
+
+  client.raw(`SELECT ${versionFunc}()`).then(onReady).catch(onError);
 }
 
 export default fp(fastifyKnex, {
